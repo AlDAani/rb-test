@@ -1,0 +1,114 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    width: 50vw;
+    height: 100vh;
+    overflow: visible;
+}
+
+.next {
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.carousel-step {
+    height: 100vh;
+    background-color: #6b54fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    padding: 0 20% 0 20%;
+    color: white;
+    font-weight: bold;
+}
+
+.rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+    gap: 2vw;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.dots {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 1vw;
+    gap: 0.5vw;
+}
+
+.dot--active {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    border: 0.2vw solid white;
+}
+
+.dot--inactive {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    border: 0.2vw solid white;
+    background-color: white;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    font-size: 2vw;
+}
+
+.restart-button {
+    width: 8vw;
+    height: 3vw;
+    margin-top: 4vw;
+    background-color: #E7FE52;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0.5vw;
+    font-size: 1.5vw;
+}
+.root {
+    width: 100vh;
+}
+
+.button {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    width: 7vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat center / contain;
+}
+.button:active{
+    background-color: #d0d2f5;
+}
+
+.thinking {
+    background-image: url("src/assets/thinking.png");
+}
+
+.thumb-up {
+    background-image: url("src/assets/thumbs-up.png");
+}
+
+.thumb-down {
+    background-image: url("src/assets/thumbs-down.png");
+}
